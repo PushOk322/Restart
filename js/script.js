@@ -1,18 +1,18 @@
 function createContentTemplateHeader() {
     const header = ` <div class="header__container">
         <div class="header__top">
-            <img src="../img/restart-logo.svg" alt="" class="header__logo">
+            <img src="img/restart-logo.svg" alt="" class="header__logo">
             <span class="header__title">Restart — Ваша зона автокомфорту</span>
             <div class="menu-icon">
                 <span></span>
             </div>
         </div>
         <div class="header__links">
-            <a href="html/about.html" class="header__link-a"><button class="header__link">Про компанію</button></a>
-            <a href="html/network.html" class="header__link-a"><button class="header__link">Мережа СТЦ</button></a>
-            <a href="html/index.html" class="header__link-a"><button class="header__link">Інтернет-магазин</button></a>
-            <a href="html/solutions.html" class="header__link-a"><button class="header__link">Готові рішення для СТО</button></a>
-            <a href="html/contacts.html" class="header__link-a"><button class="header__link">Контакти</button></a>
+            <a href="about.html" class="header__link-a"><button class="header__link">Про компанію</button></a>
+            <a href="network.html" class="header__link-a"><button class="header__link">Мережа СТЦ</button></a>
+            <a href="index.html" class="header__link-a"><button class="header__link">Інтернет-магазин</button></a>
+            <a href="solutions.html" class="header__link-a"><button class="header__link">Готові рішення для СТО</button></a>
+            <a href="contacts.html" class="header__link-a"><button class="header__link">Контакти</button></a>
         </div>
     </div>`;
     return createFragmentTemplate(header);
@@ -21,11 +21,11 @@ function createContentTemplateHeader() {
 function createContentTemplateFooter() {
     const footer = ` <div class="footer__container">
             <div class="footer__links">
-                <a href="html/about.html" class="footer__link-a"><button class="footer__link">Про компанію</button></a>
-                <a href="html/network.html" class="footer__link-a"><button class="footer__link">Мережа СТЦ</button></a>
-                <a href="html/index.html" class="footer__link-a"><button class="footer__link">Інтернет-магазин</button></a>
-                <a href="html/solutions.html" class="footer__link-a"><button class="footer__link">Готові рішення для СТО</button></a>
-                <a href="html/contacts.html" class="footer__link-a"><button class="footer__link">Контакти</button></a>
+                <a href="about.html" class="footer__link-a"><button class="footer__link">Про компанію</button></a>
+                <a href="network.html" class="footer__link-a"><button class="footer__link">Мережа СТЦ</button></a>
+                <a href="index.html" class="footer__link-a"><button class="footer__link">Інтернет-магазин</button></a>
+                <a href="solutions.html" class="footer__link-a"><button class="footer__link">Готові рішення для СТО</button></a>
+                <a href="contacts.html" class="footer__link-a"><button class="footer__link">Контакти</button></a>
             </div>
             <div class="footer__text">Мережа СТЦ Restart надає послуги діагностики, професійного ремонту стартера, генератора у Рівном, Луцьку. Заміна
             бендиксів, втягуючих реле, статорів, роторів, втулок, щіток, підшипників, регуляторів, діодних мостів. Ремонт, заправка
