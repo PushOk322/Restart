@@ -8,11 +8,11 @@ function createContentTemplateHeader() {
             </div>
         </div>
         <div class="header__links">
-            <a href="about.html" class="header__link-a"><button class="header__link">Про компанію</button></a>
-            <a href="network.html" class="header__link-a"><button class="header__link">Мережа СТЦ</button></a>
-            <a href="index.html" class="header__link-a"><button class="header__link">Інтернет-магазин</button></a>
-            <a href="solutions.html" class="header__link-a"><button class="header__link">Готові рішення для СТО</button></a>
-            <a href="contacts.html" class="header__link-a"><button class="header__link">Контакти</button></a>
+            <a href="html/about.html" class="header__link-a"><button class="header__link">Про компанію</button></a>
+            <a href="html/network.html" class="header__link-a"><button class="header__link">Мережа СТЦ</button></a>
+            <a href="html/index.html" class="header__link-a"><button class="header__link">Інтернет-магазин</button></a>
+            <a href="html/solutions.html" class="header__link-a"><button class="header__link">Готові рішення для СТО</button></a>
+            <a href="html/contacts.html" class="header__link-a"><button class="header__link">Контакти</button></a>
         </div>
     </div>`;
     return createFragmentTemplate(header);
@@ -21,11 +21,11 @@ function createContentTemplateHeader() {
 function createContentTemplateFooter() {
     const footer = ` <div class="footer__container">
             <div class="footer__links">
-                <a href="about.html" class="footer__link-a"><button class="footer__link">Про компанію</button></a>
-                <a href="network.html" class="footer__link-a"><button class="footer__link">Мережа СТЦ</button></a>
-                <a href="index.html" class="footer__link-a"><button class="footer__link">Інтернет-магазин</button></a>
-                <a href="solutions.html" class="footer__link-a"><button class="footer__link">Готові рішення для СТО</button></a>
-                <a href="contacts.html" class="footer__link-a"><button class="footer__link">Контакти</button></a>
+                <a href="html/about.html" class="footer__link-a"><button class="footer__link">Про компанію</button></a>
+                <a href="html/network.html" class="footer__link-a"><button class="footer__link">Мережа СТЦ</button></a>
+                <a href="html/index.html" class="footer__link-a"><button class="footer__link">Інтернет-магазин</button></a>
+                <a href="html/solutions.html" class="footer__link-a"><button class="footer__link">Готові рішення для СТО</button></a>
+                <a href="html/contacts.html" class="footer__link-a"><button class="footer__link">Контакти</button></a>
             </div>
             <div class="footer__text">Мережа СТЦ Restart надає послуги діагностики, професійного ремонту стартера, генератора у Рівном, Луцьку. Заміна
             бендиксів, втягуючих реле, статорів, роторів, втулок, щіток, підшипників, регуляторів, діодних мостів. Ремонт, заправка
@@ -99,13 +99,13 @@ const beforeImage = document.getElementById('img');
 const change = document.getElementById('change');
 const body = document.body;
 
-let isActive = false; 
+let isActive = false;
 
 document.addEventListener('DOMContentLoaded', () => {
     let width = slider.offsetWidth;
     beforeImage.style.width = `${width}px`;
     console.log(width);
-}) 
+})
 
 function beforeAfterSlider(x) {
     let shift = Math.max(0, Math.min(x, slider.offsetWidth));
