@@ -99,13 +99,13 @@ const beforeImage = document.getElementById('img');
 const change = document.getElementById('change');
 const body = document.body;
 
-let isActive = false;
+let isActive = false; 
 
 document.addEventListener('DOMContentLoaded', () => {
     let width = slider.offsetWidth;
     beforeImage.style.width = `${width}px`;
     console.log(width);
-})
+}) 
 
 function beforeAfterSlider(x) {
     let shift = Math.max(0, Math.min(x, slider.offsetWidth));
