@@ -1,7 +1,7 @@
 function createContentTemplateHeader() {
     const header = ` <div class="header__container">
         <div class="header__top">
-            <img src="img/restart-logo.svg" alt="" class="header__logo">
+            <a href="index.html" class="header__main-page-link"><img src="img/restart-logo.svg" alt="" class="header__logo"></a>
             <span class="header__title">Restart — Ваша зона автокомфорту</span>
             <div class="menu-icon">
                 <span></span>
@@ -60,6 +60,34 @@ function init() {
 }
 
 init();
+
+
+const pageDefiner = document.querySelector(".page-definer");
+console.log(pageDefiner);
+const headerLinks = document.querySelectorAll(".header__link");
+console.log(headerLinks);
+const footerLinks = document.querySelectorAll(".footer__link");
+if (pageDefiner.classList.contains("about")) {
+    headerLinks[0].classList.toggle("active");
+    footerLinks[0].classList.toggle("active")
+};
+if (pageDefiner.classList.contains("network")) {
+    headerLinks[1].classList.toggle("active");
+    footerLinks[1].classList.toggle("active")
+};
+if (pageDefiner.classList.contains("index")) {
+    headerLinks[2].classList.toggle("active");
+    footerLinks[2].classList.toggle("active")
+};
+if (pageDefiner.classList.contains("solutions")) {
+    headerLinks[3].classList.toggle("active");
+    footerLinks[3].classList.toggle("active")
+};
+if (pageDefiner.classList.contains("contacts")) {
+    headerLinks[4].classList.toggle("active");
+    footerLinks[4].classList.toggle("active")
+};
+
 
 //********POPUP*******/
 const formButton = document.getElementById("form__button");
@@ -144,5 +172,6 @@ body.addEventListener('mousemove', (e) => {
     pauseEvents(e);
 });
 //*******SLIDER*********END/
+
 
 
