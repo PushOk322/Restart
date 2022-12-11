@@ -9,9 +9,13 @@ function createContentTemplateHeader() {
         </div>
         <div class="header__links">
             <a href="about.html" class="header__link-a"><button class="header__link">Про компанію</button></a>
+            <div class="header__line"></div>
             <a href="network.html" class="header__link-a"><button class="header__link">Мережа СТЦ</button></a>
+            <div class="header__line"></div>
             <a href="index.html" class="header__link-a"><button class="header__link">Інтернет-магазин</button></a>
+            <div class="header__line"></div>
             <a href="solutions.html" class="header__link-a"><button class="header__link">Готові рішення для СТО</button></a>
+            <div class="header__line"></div>
             <a href="contacts.html" class="header__link-a"><button class="header__link">Контакти</button></a>
         </div>
     </div>`;
@@ -22,9 +26,13 @@ function createContentTemplateFooter() {
     const footer = ` <div class="footer__container">
             <div class="footer__links">
                 <a href="about.html" class="footer__link-a"><button class="footer__link">Про компанію</button></a>
+                <div class="footer__line"></div>
                 <a href="network.html" class="footer__link-a"><button class="footer__link">Мережа СТЦ</button></a>
+                <div class="footer__line"></div>
                 <a href="index.html" class="footer__link-a"><button class="footer__link">Інтернет-магазин</button></a>
+                <div class="footer__line"></div>
                 <a href="solutions.html" class="footer__link-a"><button class="footer__link">Готові рішення для СТО</button></a>
+                <div class="footer__line"></div>
                 <a href="contacts.html" class="footer__link-a"><button class="footer__link">Контакти</button></a>
             </div>
             <div class="footer__text">Мережа СТЦ Restart надає послуги діагностики, професійного ремонту стартера, генератора у Рівном, Луцьку. Заміна

@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Roboto-500';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-700';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-400';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+$color-black: #333333;
+$color-blue: #337AB7;
+$color-tightgrey: #666666;
+$color-lightgrey: #999999;
+$color-middle-grey: #777777;
+
+.contacts {
+    margin: 100px 0 68px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1360px;
+    justify-content: space-between;
+
+    &__container {
+        margin: 21px 0 0 10px;
+    }
+
+    &__title {
+        margin: 0px 0 38px 0;
+        font-family: "Roboto-400";
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    &__info {
+        margin: -1px 0 0 -1px;
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+    }
+
+    &__adresses {
+        margin: 2px 0 0px 2px;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black;
+    }
+
+    &__phones {
+        margin: 0px 0 0px 2px;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black;
+    }
+
+    &__grey-text {
+        display: inline-flex;
+        color: $color-lightgrey;
+        flex-wrap: nowrap;
+        padding: 0 0 1px 0px;
+    }
+
+    &__purple-link {
+        padding-left: 2px;
+        color: #79509A;
+    }
+
+    &__socials {
+        margin: -4px 0 0 2px;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    &__schedule {
+        margin: 0 0 0 1.5px;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    &__map-wrapper {
+        margin: 0 0 0 0px;
+        width: 100%;
+        height: 1000px;
+        max-width: 1000px;
+        max-height: 570px;
+    }
+
+    &__map {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.page-definer {
+    margin: 0;
+    width: 0;
+    height: 0;
+}

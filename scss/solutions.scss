@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Roboto-500';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-700';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-400';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+html {
+    overflow-x: hidden;
+}
+
+$color-black: #333333;
+$color-blue: #337AB7;
+$color-tightgrey: #666666;
+$color-lightgrey: #999999;
+$color-middle-grey: #777777;
+
+.sto {
+    margin: 115px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1360px;
+
+
+    &__wrapper{
+        margin: 0 0 -3px 0;
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    &__parts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0 0 0 10px;
+        font-family: "Roboto-400";
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    &__container {
+        margin: 42px 0 0 40px;
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        z-index: 2;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__emblem {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__text {
+        margin: 16px 0 0 0;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: $color-tightgrey;
+    }
+
+    &__img {
+        margin: 7px 0 0 13px;
+        width: 1360px;
+        max-width: 1359px;
+        position: relative;
+    }
+
+    &__work {
+        position: relative;
+        margin: 27px 0 0 0;
+    }
+
+    &__work-img {
+        position: absolute;
+        top: 223px;
+        right: -10px;
+        z-index: 1;
+        object-fit: cover;
+        height: 470px;
+        object-position: 0 0 ;
+    }
+
+    &__work-container {
+        margin: 47px 0 460px 17px;
+        max-width: 1355px;
+        position: relative;
+        z-index: 2;
+    }
+
+    #instrument-br {
+        display: none;
+    }
+}

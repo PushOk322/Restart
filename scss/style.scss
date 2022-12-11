@@ -1,0 +1,477 @@
+@import 'about';
+@import 'network';
+@import 'solutions';
+@import 'contacts';
+
+
+
+@font-face {
+    font-family: 'Roboto-500';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Roboto-700';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-400';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+//#######RESETTING STYLES########
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+//#######RESETTING STYLES########END
+
+$color-black: #333333;
+$color-tightgrey: #666666;
+$color-lightgrey: #999999;
+$color-middle-grey: #777777;
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    background-color: #F9F9F9;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+//**********HEADER***********
+.menu-icon {
+    display: none;
+}
+
+.header {
+    margin: 23px 0 64px 20px;
+    width: 100%;
+    max-width: 1360px;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {}
+
+    &__title {
+        font-family: "Roboto-400";
+        margin: 20px 0 0 363.5px;
+        color: $color-tightgrey;
+    }
+
+
+    &__links {
+        width: 100%;
+        position: absolute;
+        top: 42px;
+        z-index: 100;
+        max-width: 1361px;
+        height: 80px;
+        margin: 54px 0 0 0;
+        padding: 0 100px 0 83px;
+        display: flex;
+        align-items: center;
+        border: #E2E2E2 solid 1px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        justify-content: space-between;
+    }
+
+    &__line{
+        height: 50px;
+        border-left: solid 1px #E2E2E2;
+    }
+
+    &__link {
+        font-family: "Roboto-400";
+        font-size: 16px;
+        background: transparent;
+    }
+    &__link.active{
+        color: #888888;
+    }
+
+    &__link:target {
+        color: blue;
+    }
+}
+
+//**********HEADER********END
+
+//**********FOOTER***********
+.footer {
+    margin: 20px 0 20px 20px;
+    width: 100%;
+    max-width: 1360px;
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__links {
+        width: 100%;
+        position: absolute;
+        top: 26px;
+        z-index: 100;
+        max-width: 1361px;
+        height: 80px;
+        margin: 0px 0 0 0;
+        padding: 0 100px 0 83px;
+        display: flex;
+        align-items: center;
+        border: #E2E2E2 solid 1px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        justify-content: space-between;
+    }
+
+    &__line {
+        height: 50px;
+        border-left: solid 1px #E2E2E2;
+    }
+
+    &__link {
+        font-family: "Roboto-400";
+        font-size: 16px;
+        background: transparent;
+    }
+    &__link.active {
+        color: #888888;
+    }
+
+    &__text {
+        text-align: justify;
+        margin: 134px 0 0 0;
+        font-family: "Roboto-400";
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-lightgrey;
+    }
+
+    &__copyright {
+        margin: 0px 0px 0 0;
+        width: 90%;
+        gap: 0 10px 0 0;
+        text-align: right;
+        font-family: "Roboto-400";
+        font-size: 14px;
+        color: $color-lightgrey;
+    }
+}
+
+//**********FOOTER********END
+
+
+//*********SLIDER************
+
+.slider {
+    // margin-top: 20px;
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 866px;
+
+
+    &__before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        z-index: 15;
+        width: 50%;
+        height: 100%;
+    }
+
+    &__after {}
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__change {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: calc(50% - 33.5px);
+        top: calc(50% - 24px);
+        z-index: 16;
+        width: 67px;
+        height: 67px;
+        background: #FF0000;
+        border-radius: 50%;
+    }
+
+    &__arrow:nth-child(3) {
+        transform: rotate(180deg);
+    }
+
+    &__inner-line {
+        height: 30px;
+        border-left: solid white 1px;
+        margin: 0 9px;
+    }
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &__cards-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 36%;
+    }
+
+    &__card {
+        z-index: 20;
+        width: 280px;
+        height: 217px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+
+    }
+
+    &__card-container {
+        margin: 30px 0 0 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__card-emblem {
+        margin: -10px 0 0 -1px;
+    }
+
+    &__card-text {
+        margin: 5px 0 0 7px;
+        width: 180px;
+        height: 66px;
+        display: inline-block;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-tightgrey;
+    }
+
+    &__button {
+        margin: 33px 0 0 29px;
+        padding: 0 3px 1px 0;
+        width: 200px;
+        height: 50px;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 19px;
+        background: transparent;
+        border-radius: 100px;
+        border: #CECECE solid 1px;
+    }
+}
+
+//*********SLIDER*********END
+
+
+//*********DESCRIPTION*******
+.description {
+    margin: 74px 0 20px 0;
+    max-width: 1360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin: 0 0 0 20px;
+
+        width: 183.86px;
+        height: 67px;
+    }
+
+    &__undertitle {
+        margin: 29px 0 0 20px;
+        font-family: "Roboto-400";
+        font-size: 20px;
+    }
+    &__undertitle br {
+        display: none;
+    }
+
+    &__container {
+        width: 100%;
+        margin: 0px 0 0 20px;
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 442px;
+        height: 386px;
+        margin: 30px 17px 0 0;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        background: #ffffff;
+    }
+
+    &__card:nth-child(3) {
+        margin: 30px 0 0 0;
+    }
+
+    &__img {
+        width: 442px;
+        height: 200px;
+    }
+
+    &__card-title {
+        margin: 27px 0 0 0;
+        font-family: "Roboto-400";
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-black;
+    }
+
+    &__card-line{
+        margin: 17px 0 0 0;
+        width: 355px;
+        border-bottom: solid 1px #E2E2E2;
+    }
+
+    &__card-text {
+        margin: 30px 0 0 0;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: $color-tightgrey;
+    }
+
+    &__bottom-text {
+        text-align: center;
+        margin: 46px 0 2px 20px;
+        max-width: 850px;
+        max-height: 48px;
+        font-family: "Roboto-400";
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-black;
+    }
+}
+
+//*********DESCRIPTION****END
+
+@import 'about';
+@import 'network';
+@import 'solutions';
+@import 'contacts';
+
+@import 'media';
